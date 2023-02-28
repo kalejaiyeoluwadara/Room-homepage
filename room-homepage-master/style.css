@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s linear ;
+}
+.mobile{
+    display: none;
+}
+section{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.mainImg{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 40px 20px;
+    background-image: url('./images//desktop-image-hero-1.jpg');
+}
+nav{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 60%;
+
+}
+nav h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    list-style: none;
+    width: 80%;
+}
+#underline {
+  border: none;
+  height: 3px;
+  margin-top:0px ;
+  background-color: white;
+  width: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+
+a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.side{
+    width:50%;
+    padding: 30px 50px;
+}
+.innerside{
+    width: 70%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+   
+}
+.side h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+.slidesbtn{
+    width: 120px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+     position: absolute;
+    right: -120px;
+    bottom: 0px;
+    justify-content: space-around;
+}
+.bb{
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.left:hover {
+    background-color:hsl(0, 0%, 27%) ;
+}
+.right:hover{
+    background-color:hsl(0, 0%, 27%) ;
+
+}
+.side h6{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    color: hsl(0, 0%, 10%);
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.side h6:hover{
+ color: hsl(0, 0%, 63%);
+}
+
+footer{
+    display: flex;
+    align-items:center;
+    transform: translateY(-3px);
+}
+#mob{
+    display: none;
+}
+.about{ 
+ padding: 20px 30px;
+}
+.about p{
+    margin-top:15px ;
+}
+p{
+    color: hsl(0, 0%, 63%);
+}
+.about h4{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+@media only screen and (max-width:800px){
+    
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.mainImg{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 20px;
+    background-repeat: no-repeat;
+}
+
+
+
+.side{
+    width:100%;
+    height: 100vh;
+    padding: 30px 50px;
+}
+.innerside{
+    width: 70%;
+    margin: 10% auto;
+   display: block;
+    height: 100%;
+   
+}
+.side h6{
+    margin-top: 30px;
+}
+.slidesbtn{
+    bottom: 90px;
+    right: 0px;
+}
+
+footer{
+    flex-direction: column;
+    width: 100%;
+    
+}
+.about{
+    padding: 60px 30px;
+}
+.imgc{
+    width: 100%;
+}
+.imgc img{
+    width: 100%;
+}
+.desk{
+    display: none;
+}
+.mobile{
+    display: flex;
+}
+
+#mob{
+    display: none;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.mobile img{
+    cursor: pointer;
+}
+ul{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width: 100%;
+    padding: 30px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: rgb(66, 66, 66);
+}
+#close{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transform: translateX(-25px);
+}
+
+}
