@@ -15,6 +15,12 @@ const images = [
   './images/desktop-image-hero-2.jpg',
   './images/desktop-image-hero-3.jpg'
 ];
+const images_m = [
+  './images/mobile-image-hero-1.jpg',
+  './images/mobile-image-hero-2.jpg',
+  './images/mobile-image-hero-3.jpg'
+];
+
 
 const maxSlide = titles.length - 1;
 
@@ -30,7 +36,12 @@ function slidef(direction) {
     slide--;
   }
   
-  bg.style.backgroundImage = `url(${images[slide]})`;
+  if(window.innerWidth < 800){
+    bg.style.backgroundImage = `url(${images_m[slide]})`;
+  }
+  else{
+    bg.style.backgroundImage = `url(${images[slide]})`;
+  }
   ctitle.innerText = titles[slide];
   ccont.innerText = contents[slide];
 }
@@ -44,6 +55,9 @@ function nav(t){
   }
 }
 
+
+
+//animation
 const lis = document.querySelectorAll('li');
 const underline = document.getElementById('underline');
 
