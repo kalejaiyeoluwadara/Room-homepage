@@ -27,6 +27,7 @@ section{
     height: 100%;
     padding: 40px 20px;
     background-image: url('./images//desktop-image-hero-1.jpg');
+    background-repeat:no-repeat;
 }
 nav{
     display: flex;
