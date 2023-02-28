@@ -27,7 +27,8 @@ section{
     height: 100%;
     padding: 40px 20px;
     background-image: url('./images//desktop-image-hero-1.jpg');
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 nav{
     display: flex;
@@ -44,6 +45,7 @@ nav h3{
 ul{
     display:flex;
     align-items:center;
+    text-transform: lowercase;
     justify-content:space-evenly;
     list-style: none;
     width: 80%;
